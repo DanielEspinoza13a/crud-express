@@ -1,21 +1,16 @@
 module.exports = (sequelize, DataTypes) => {
-    const Item = sequelize.define("Item", {
+    const Tipo = sequelize.define("Tipo", {
       uuid: {
         type: DataTypes.UUID,
         defaultValue: DataTypes.UUIDV1,
         primaryKey: true
       },
-      text: {
+      name: {
         type: DataTypes.STRING,
         
-      },
-      price: {
-        type: DataTypes.STRING,
-        
-      },
+      }
 
     });
-    return Item;
-    
+    return Tipo;
     
   };
